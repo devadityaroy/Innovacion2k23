@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Example - SS Masonry Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="cache-control" content="public">
+  <meta http-equiv="expires" content="2592000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="dist/ssMasonryGallery.css">
+  <style type="text/css">
+  	/*reset*/
+		html{
+			font-size: 11px;
+			width: 100%;
+			overflow-x: hidden;
+		}
+		@media (min-width: 600px){
+			html{
+				font-size: 12px;
+			}
+		}
+		@media (min-width: 992px){
+			html{
+				font-size: 14px;
+			}
+		}
+		body{
+			margin: 0;
+			overflow-x: hidden;
+		}
+		img{
+			max-width: 100%;
+		}
+		.container {
+			width: 95%;
+			max-width: 1300px;
+			margin: 0 auto;
+		}
+  </style>
+</head>
+
+<body>
+	<a href="../index.html"> <img id="image" src="../img/home-button-for-interface.png" height="40" width="40" margin="20px" alt=""> </a>
+
+	
+	<h1 class="heading">Gallery</h1>
+
+	<div class="container101">
+		<div class="box">
+		  <img src="../img/2/innovacion/00.jpeg">
+		</div>
+		<div class="box">
+		  <img src="../img/2/innovacion/60.jpeg">
+		</div>
+		<div class="box">
+		  <img src="../img/2/innovacion/50.jpeg">
+		</div>
+		<div class="box">
+		  <img src="../img/2/innovacion/40.jpeg">
+		</div>
+	  </div>
+
+
+	<div class="container">
+		<div id="ss-masonry">
+			<img src="../img/video11.mp4" alt="">
+			<img src="../img/1/MadCad/10.jpeg" alt="">
+			<img src="../img/1/MadCad/20.jpeg" alt="">
+			<img src="../img/1/MadCad/30.jpeg" alt="">
+			<img src="../img/1/MadCad/40.jpeg" alt="">
+			<img src="../img/1/MadCad/50.jpeg" alt="">
+			<img src="../img/1/MadCad/60.jpeg" alt="">
+			<img src="../img/1/Cyberthon/00.jpeg" alt="">
+			<img src="../img/1/Cyberthon/10.jpeg" alt="">
+
+
+	  </div>
+
+
+	  <p>Photos copyrights belong to their respective title owners</p>
+	</div>
+
+<!-- <div id="ssMasonryGallery-projector" class="active">
+	<div class="title-bar">
+		<p class="ssMasonryGallery-caption">4/12 - Here comes the demons!</p>
+		<ul class="right">
+			<li><button type="button" id="ssMasonryGallery-left"><i class="material-icons">chevron_left</i></button></li>
+			<li><button type="button" id="ssMasonryGallery-right"><i class="material-icons">chevron_right</i></button></li>
+			<li><button type="button" id="ssMasonryGallery-close"><i class="material-icons">close</i></button></li>
+		</ul>
+	</div>
+	<div class="img-cont">
+		<img src="src/img/Daemons.jpg">
+	</div>
+</div> -->
+
+<script src="src/jquery-3.3.1.min.js"></script>
+<script src="dist/ssMasonryGallery.js"></script>
+<script>
+$(window).on('load', function(){
+	$('#ss-masonry').ssMasonryGallery();
+});
+</script>
+</body>
+</html>
